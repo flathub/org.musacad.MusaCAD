@@ -9,6 +9,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
+  - --share=network
 
 modules:
   - name: musa-cad
@@ -20,7 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/MusaCAD/MusaCAD.git
-        commit: 65f038b8643083f7f486823d2e2780b3fe7fadae
+        tag: v0.5.0
+        commit: 66718506e7e11ff6a36dcf4a28cb739ddc57eded
         x-checker-data:
           type: git
           tag-pattern: "^v([\\d.]+)$"
